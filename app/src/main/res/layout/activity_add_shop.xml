@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddShop">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo2"
+            android:layout_gravity="center"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageButton
+        android:id="@+id/addImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+    <EditText
+        android:id="@+id/shopName"
+        android:layout_width="380dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/usename"
+        android:ems="10"
+        android:hint="Shop Name"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp" />
+    <EditText
+        android:id="@+id/shopAddress"
+        android:layout_width="380dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/usename"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textMultiLine"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp" />
+    <EditText
+        android:id="@+id/shopLocality"
+        android:layout_width="380dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/usename"
+        android:ems="10"
+        android:hint="Locality"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp" />
+    <EditText
+        android:id="@+id/shopCategory"
+        android:layout_width="380dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/usename"
+        android:ems="10"
+        android:hint="Category"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp" />
+    <Button
+        android:id="@+id/addShop"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/loginbtn"
+        android:text="Add Shop"
+        android:theme="@style/ThemeOverlay.MyDarkButton" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prog_bar_add_shop"
+        android:layout_gravity="center"/>
+</LinearLayout>

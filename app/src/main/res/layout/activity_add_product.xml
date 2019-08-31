@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".AddProduct">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo2"
+                android:layout_gravity="center"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ImageButton
+            android:id="@+id/prodImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+        <EditText
+            android:id="@+id/prodName"
+            android:layout_width="380dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/usename"
+            android:ems="10"
+            android:hint="Product Name"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp" />
+        <EditText
+            android:id="@+id/prodPrice"
+            android:layout_width="380dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/usename"
+            android:ems="10"
+            android:hint="Price"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp" />
+        <EditText
+            android:id="@+id/prodCategory"
+            android:layout_width="380dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/usename"
+            android:ems="10"
+            android:hint="Category"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp" />
+        <EditText
+            android:id="@+id/qtyInStore"
+            android:layout_width="380dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/usename"
+            android:ems="10"
+            android:hint="Quantity In Storage"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="380dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/usename"
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp" />
+
+        <EditText
+            android:id="@+id/userItemId"
+            android:layout_width="380dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/usename"
+            android:ems="10"
+            android:hint="Item Id"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp" />
+        <Button
+            android:id="@+id/addProd"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/loginbtn"
+            android:text="Add Product"
+            android:theme="@style/ThemeOverlay.MyDarkButton" />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/prog_bar_add_prod"/>
+
+</LinearLayout>
+</ScrollView>

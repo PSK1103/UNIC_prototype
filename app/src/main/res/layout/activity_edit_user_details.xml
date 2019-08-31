@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditUserDetails">
+    <FrameLayout
+        android:id="@+id/userPic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp">
+    <ImageView
+    android:id="@+id/profilephoto"
+    android:layout_width="155dp"
+    android:layout_marginTop="25dp"
+    android:layout_height="155dp"
+    android:layout_gravity="center"
+    android:src="@drawable/add_user"
+    android:scaleType="fitCenter"/>
+    <ImageView
+        android:id="@+id/crop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="150dp"
+        android:layout_marginTop="25dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/circlecrop"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="10dp"/>
+    </FrameLayout>
+
+    <EditText
+     android:id="@+id/FirstName"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_margin="20dp"
+     android:background="@drawable/usename"
+     android:paddingLeft="10dp"
+     android:paddingTop="5dp"
+     android:paddingBottom="5dp"
+     app:layout_constraintLeft_toLeftOf="parent"
+     app:layout_constraintRight_toRightOf="parent"
+     app:layout_constraintTop_toBottomOf="@id/crop" />
+
+    <EditText
+        android:id="@+id/LastName"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/FirstName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/usename"/>
+    <TextView
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/LastName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/usename"
+
+        android:layout_margin="20dp"/>
+    <TextView
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/phone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/usename"/>
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/loginbtn"
+        android:text="Confirm Details"
+        android:theme="@style/ThemeOverlay.MyDarkButton"
+        app:layout_constraintTop_toBottomOf="@id/email" />
+
+
+</LinearLayout>

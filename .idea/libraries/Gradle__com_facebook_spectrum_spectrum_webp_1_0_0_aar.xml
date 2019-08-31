@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.spectrum:spectrum-webp:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7daaed2f951781958857178c040a5bb8/spectrum-webp-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7daaed2f951781958857178c040a5bb8/spectrum-webp-1.0.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.spectrum/spectrum-webp/1.0.0/7e889e03fee94401fae5eae70698b78b503116a5/spectrum-webp-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.spectrum/spectrum-webp/1.0.0/adbfeeaf1eba975327ec7096fb49baa5ec897d9c/spectrum-webp-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

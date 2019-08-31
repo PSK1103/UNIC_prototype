@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.spectrum:spectrum-png:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d99c84e9e680ccf6f1f47330fd01753a/spectrum-png-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d99c84e9e680ccf6f1f47330fd01753a/spectrum-png-1.0.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.spectrum/spectrum-png/1.0.0/c88fec1cda5af40f4193ea5dd7395aa98b081c0c/spectrum-png-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.spectrum/spectrum-png/1.0.0/cde5e3377cabc1af8a8e920ef6204af9b885822/spectrum-png-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

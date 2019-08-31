@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.spectrum:spectrum-core:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cd48264b008bc958cddc9d45120598a5/jetified-spectrum-core-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cd48264b008bc958cddc9d45120598a5/jetified-spectrum-core-1.0.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.spectrum/spectrum-core/1.0.0/2f582764a3f424dd0ffc140b82a9fc2fba265d21/spectrum-core-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.spectrum/spectrum-core/1.0.0/1b94b8227b20a1d9a9160035302f119fb2133e9b/spectrum-core-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
