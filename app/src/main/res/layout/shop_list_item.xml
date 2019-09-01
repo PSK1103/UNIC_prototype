@@ -57,12 +57,13 @@
                     app:srcCompat="@drawable/info" />
 
                 <ImageView
-                    android:id="@+id/ivShoppingCart"
+                    android:id="@+id/ivSubscribe"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_weight="1"
-                    android:clickable="true"
-                    app:srcCompat="@drawable/ic_shopping_cart_black_24dp" />
+                    app:srcCompat="@drawable/subscribe" />
+
+
             </LinearLayout>
 
         </LinearLayout>

@@ -13,21 +13,9 @@
             android:icon="@drawable/ic_local_convenience_store_black_24dp"
             android:title="My Shops" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
-        <item
-            android:id="@+id/nav_addShop"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Add Shop" />
-        <item
             android:id="@+id/nav_tools"
             android:icon="@drawable/ic_menu_manage"
             android:title="@string/menu_tools" />
-        <item
-            android:id="@+id/nav_addProduct"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Add Product" />
         <item
             android:id="@+id/logout"
             android:icon="@drawable/ic_menu_logout"

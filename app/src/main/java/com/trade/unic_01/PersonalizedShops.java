@@ -75,9 +75,9 @@ public class PersonalizedShops extends AppCompatActivity implements AdapterView.
                 if(task.isSuccessful()){
                     DocumentSnapshot doc = task.getResult();
                     if(doc.exists()){
-                        shopname = doc.getString("shopname");
-                        shoplocality = doc.getString("shoplocality");
-                        imagelink = doc.getString("imagelink");
+                        //shopname = doc.getString("shopname");
+                        //shoplocality = doc.getString("shoplocality");
+                       // imagelink = doc.getString("imagelink");
                     }
                 }
             }

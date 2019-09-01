@@ -58,7 +58,7 @@ class AddShopKt : AppCompatActivity() {
     private var imageSelectSucessfull=false
     private var photouri:Uri?=null
     private var mAuth: FirebaseAuth? = null
-
+    
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     @SuppressLint("CheckResult")
     override fun onCreate(savedInstanceState: Bundle?) {

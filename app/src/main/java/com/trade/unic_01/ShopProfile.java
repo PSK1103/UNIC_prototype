@@ -104,6 +104,8 @@ public class    ShopProfile extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i=new Intent(ShopProfile.this,PersonalizedShops.class);
                 i.putExtra("shopid",shopid);
+                i.putExtra("Shop name",shopDetails.shopname);
+                i.putExtra("Shop locality",shopDetails.shoplocality);
                 //send shopkeepers photo
                 startActivity(i);
                 finish();

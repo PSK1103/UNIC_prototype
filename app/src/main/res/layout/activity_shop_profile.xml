@@ -123,10 +123,8 @@
     </LinearLayout>
 
 
-
-    <ImageView
+        <ImageView
         android:id="@+id/imageView6"
-        android:background="@drawable/whitw_border"
         android:padding="5dp"
         android:layout_width="120dp"
         android:layout_height="120dp"

@@ -221,20 +221,9 @@ public class Home extends AppCompatActivity
 
         if (id == R.id.nav_home) {
             // Handle the camera action
-        } else if (id == R.id.nav_addShop) {
-            startActivity(new Intent(Home.this,AddShopKt.class));
-        } else if (id == R.id.nav_slideshow) {
-            Intent intent =new Intent(Home.this, PersonalizedShops.class);
-            startActivity(intent);
-
-        } else if (id == R.id.nav_tools) {
+        }else if (id == R.id.nav_tools) {
             Intent intent=new Intent(Home.this,ShopProfile.class);
             //intent.putExtra("pic",shopsSubscribed.get(0).imageid);
-            startActivity(intent);
-
-        }
-        else if (id == R.id.nav_addProduct) {
-            Intent intent =new Intent(Home.this, AddProductKt.class);
             startActivity(intent);
 
         }

@@ -8,21 +8,30 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
 import com.trade.unic_01.dataclasses.SubscribedDataClass;
 import com.trade.unic_01.dataclasses.SubscribedShopsClassJava;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 
 public class subscribedListAdapter extends RecyclerView.Adapter<subscribedListAdapter.ViewHolder> {
     ArrayList<SubscribedShopsClassJava> shopsSubscribed;
     private Context context1;
 
+    private FirebaseAuth mAuth;
+    private FirebaseFirestore db;
 
     public subscribedListAdapter(Context context, ArrayList<SubscribedShopsClassJava> list) {
         shopsSubscribed = list;
@@ -32,7 +41,7 @@ public class subscribedListAdapter extends RecyclerView.Adapter<subscribedListAd
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView tvShopName;
-        ImageView ivShopPhoto,ivinfo,ivShoppingCart;
+        ImageView ivShopPhoto,ivinfo,ivSubscribe;
 
 
         public ViewHolder(@NonNull View itemView) {
@@ -40,7 +49,7 @@ public class subscribedListAdapter extends RecyclerView.Adapter<subscribedListAd
             tvShopName = itemView.findViewById(R.id.tvshopName);
             ivShopPhoto=itemView.findViewById(R.id.ivShopPhoto);
             ivinfo=itemView.findViewById(R.id.ivInfo);
-            ivShoppingCart=itemView.findViewById(R.id.ivShoppingCart);
+            ivSubscribe=itemView.findViewById(R.id.ivSubscribe);
 
 
 
@@ -92,15 +101,26 @@ public class subscribedListAdapter extends RecyclerView.Adapter<subscribedListAd
         }
 
         );
-        holder.ivShoppingCart.setOnClickListener(new View.OnClickListener() {
+        holder.ivSubscribe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent i=new Intent(context1,PersonalizedShops.class);
-                i.putExtra("Shop name",shopsSubscribed.get(position).getShopname());
-
-                //send image
-                context1.startActivity(i);
+                mAuth = FirebaseAuth.getInstance();
+                db = FirebaseFirestore.getInstance();
+                HashMap<String,String> dataMap = new HashMap<>();
+                dataMap.put("shopid",shopsSubscribed.get(position).getShopid());
+                dataMap.put("shopname",shopsSubscribed.get(position).getShopname());
+                dataMap.put("imagelink",shopsSubscribed.get(position).getShopimage());
+                db.collection("users").document(mAuth.getUid()).collection("subscribed").document(shopsSubscribed.get(position).getShopid()).set(dataMap).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        Toast.makeText(context1, "Subscribed", Toast.LENGTH_SHORT).show();
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(context1, "Subscribe Failed", Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
         });
 

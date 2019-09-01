@@ -59,6 +59,7 @@ public class MyShopAdapter extends RecyclerView.Adapter<MyShopAdapter.ViewHolder
                 Intent intent=new Intent(mContext,ShopProfile.class);
                 intent.putExtra("pic",R.drawable.shop1);
                 intent.putExtra("shopid",shopsOwned.get(position).getShopid());
+                intent.putExtra("Shop name",shopsOwned.get(position).getShopname());
                 intent.putExtra("status",0);
                 mContext.startActivity(intent);
             }
